@@ -1,0 +1,40 @@
+{
+	"name": "grunt-madge",
+	"description": "Check for circular dependencies in AMD or CommonJS modules using Madge.",
+	"version": "0.0.1",
+	"homepage": "https://github.com/pahen/grunt-madge",
+	"author": {
+		"name": "Patrik Henningsson",
+		"email": "patrik.henningsson@gmail.com",
+		"url": "http://pahen.se"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/pahen/grunt-madge.git"
+	},
+	"bugs": {
+		"url": "https://github.com/pahen/grunt-madge/issues"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/pahen/grunt-madge/blob/master/LICENSE-MIT"
+		}
+	],
+	"main": "Gruntfile.js",
+	"engines": {
+		"node": ">= 0.8.0"
+	},
+	"scripts": {
+		"test": "grunt test"
+	},
+	"dependencies": {
+		"madge": "~0.1.4"
+	},
+	"peerDependencies": {
+		"grunt": "~0.4.1"
+	},
+	"keywords": [
+		"gruntplugin"
+	]
+}
