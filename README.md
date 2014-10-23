@@ -41,6 +41,12 @@ Default value: `'cjs'`
 
 Which format the modules being checked are using (cjs, amd).
 
+#### exclude
+Type: `String`
+Default value: `''`
+
+String from which a regex will be constructed for excluding files from the scan.
+
 #### force
 Type: `Boolean`
 Default value: `false`
