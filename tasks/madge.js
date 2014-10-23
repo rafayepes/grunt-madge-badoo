@@ -14,6 +14,7 @@ module.exports = function (grunt) {
 	grunt.registerMultiTask('madge', 'Check for circular dependencies in modules.', function () {
 		var options = this.options({
 				format: 'cjs',
+				exclude: '',
 				force: false
 			}),
 			files = this.filesSrc,
@@ -24,6 +25,7 @@ module.exports = function (grunt) {
 		// run madge on the given files/dirs
 		result = madge(files, {
 			format: options.format,
+			exclude: options.exclude,
 			breakOnError: true
 		});
 
