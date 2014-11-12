@@ -15,7 +15,8 @@ module.exports = function (grunt) {
 		var options = this.options({
 				format: 'cjs',
 				exclude: '',
-				force: false
+				force: false,
+				breakOnError: true
 			}),
 			files = this.filesSrc,
 			result, circular;
@@ -23,11 +24,7 @@ module.exports = function (grunt) {
 		grunt.log.write('Checking ' + files.join(', ') + '...');
 
 		// run madge on the given files/dirs
-		result = madge(files, {
-			format: options.format,
-			exclude: options.exclude,
-			breakOnError: true
-		});
+		result = madge(files, options);
 
 		circular = result.circular().getArray();
 
