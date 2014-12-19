@@ -52,3 +52,9 @@ Type: `Boolean`
 Default value: `false`
 
 Set `force` to `true` to report errors but not fail the task.
+
+#### breakOnError
+Type: `Boolean`
+Default value: `true`
+
+Set `breakOnError` to `false` to not fail the task on parser errors and when modules are missing.

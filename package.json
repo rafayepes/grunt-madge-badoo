@@ -1,7 +1,7 @@
 {
 	"name": "grunt-madge",
 	"description": "Check for circular dependencies in AMD or CommonJS modules using Madge.",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"homepage": "https://github.com/pahen/grunt-madge",
 	"author": {
 		"name": "Patrik Henningsson",
