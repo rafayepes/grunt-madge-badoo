@@ -9,7 +9,7 @@
 'use strict';
 
 module.exports = function (grunt) {
-	var madge = require('madge');
+	var madge = require('madge-badoo');
 
 	grunt.registerMultiTask('madge', 'Check for circular dependencies in modules.', function () {
 		var options = this.options({
